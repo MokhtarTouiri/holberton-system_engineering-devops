@@ -1,8 +1,4 @@
 #!/usr/bin/env bash
 # Don't stop my now! 
-kill $ pgrep -f
-while true; do
-echo To infinity and beyond
-sleep 2
-done 
+kill "$(pgrep -f ./4-to_infinity_and_beyond)"
 
