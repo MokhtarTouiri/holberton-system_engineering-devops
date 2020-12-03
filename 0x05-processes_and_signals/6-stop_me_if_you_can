@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Stop me if you can 
+pkill -SIGTERM -f
+while true; do
+echo To infinity and beyond
+sleep 2
+done
