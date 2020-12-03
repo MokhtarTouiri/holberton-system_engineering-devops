@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#How to find the PID of a running command in bash?
+ps -auxf | less | grep bash
