@@ -7,14 +7,14 @@ if
 then
 echo FizzBuzz
 elif 
-[ $((FI % 5)) -eq 0 ]
+[ $((FI % 5)) -eq 0 ];
 then
-echo "Buzz"
+echo Buzz
 elif 
-[ $((FI % 3)) -eq 0 ]
+[ $((FI % 3)) -eq 0 ];
 then
-echo "Fizz"
+echo Fizz
 else
-echo "$FI"
+echo $FI
 fi
 done
