@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# While Holberton School loop
+a=0
+while 
+[ $((a++)) -le 9 ]; 
+do	
+echo Holberton School
+done   
