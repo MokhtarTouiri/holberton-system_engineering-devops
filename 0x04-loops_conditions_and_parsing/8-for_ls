@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# for ls
+for list in *; do
+echo "$list" | cut -f 2- -d '-'
+done
