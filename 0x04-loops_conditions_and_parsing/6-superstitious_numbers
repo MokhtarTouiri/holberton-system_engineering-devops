@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # 4 bad luck, 8 is your chance 
-a=0
+a=1
 while 
-[ $a -lt 20 ];
+[ $a -le 20 ];
 do
 echo $a
 case $a in
