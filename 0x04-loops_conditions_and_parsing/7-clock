@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# 4 bad luck, 8 is your chance 
+H=0
+while 
+[ $H -le 12 ]
+do
+echo Hour: $H
+M=1
+while 
+[ $M -lt 60 ]
+do
+echo $M
+((M++))
+done
+((H++))
+done
