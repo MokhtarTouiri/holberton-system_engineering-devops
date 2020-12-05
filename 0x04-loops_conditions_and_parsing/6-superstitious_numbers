@@ -2,7 +2,7 @@
 # 4 bad luck, 8 is your chance 
 a=0
 while 
-[ $a -le 19 ];
+[ $a -lt 20 ];
 do
 echo $a
 case $a in
