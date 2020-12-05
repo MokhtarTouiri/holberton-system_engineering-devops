@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# for FIZZBUZZ
+for FI in {1..100}
+do
+if 
+[ $((FI % 5)) -eq 0 -a $((i % 3)) -eq 0 ];
+then
+echo FizzBuzz
+elif 
+[ $((FI % 5)) -eq 0 ]
+then
+echo "Buzz"
+elif 
+[ $((FI % 3)) -eq 0 ]
+then
+echo "Fizz"
+else
+echo "$FI"
+fi
+done
