@@ -1,3 +1,4 @@
+# Create a file in /tmp Using Puppet
 file { '/tmp/holberton':
   ensure  => 'file',
   owner   => 'www-data',
