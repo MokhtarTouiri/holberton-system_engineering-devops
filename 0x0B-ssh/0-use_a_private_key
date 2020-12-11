@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
-ssh -i ~/.ssh/holberton ubuntu@35.229.40.128
+#connect to your server
+ssh -i ~/.ssh/holberton ubuntu@35.196.221.202
