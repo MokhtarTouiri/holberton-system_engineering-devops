@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 git add *
 git commit -m "fix"
-git push#!/usr/bin/env bash
+git push
