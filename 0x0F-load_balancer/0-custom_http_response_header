@@ -1,2 +1,9 @@
 #!/usr/bin/env bash
 # Double the number of webservers
+sudo apt-get -y update
+sudo apt-get -y install nginx
+sudo ufw allow 80/tcp
+sudo chmod a+w /var/www/html/index.nginx-debian.html
+hostname=$(cat /etc/hostname)
+sudo sed -i "37 i\ \tadd_header X-Served-By $hostname;\n" /etc/nginx/sites-enabled/default
+sudo service nginx restart
