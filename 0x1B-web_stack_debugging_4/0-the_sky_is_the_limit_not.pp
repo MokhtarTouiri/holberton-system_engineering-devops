@@ -5,5 +5,5 @@ exec { 'fix nginx':
 }
 exec { 'nginx restart':
   path    => '/etc/init.d/',
-  command => 'sudo service nginx restart',
+  command => 'nginx restart',
 }
