@@ -4,7 +4,7 @@
 import requests
 
 
-def recurse(subreddit, hot_list=[], count=0, after=None):
+def recurse(subreddit, hot_list=[]):
     """
     1. Top Ten
     """
