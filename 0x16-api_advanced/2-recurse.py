@@ -11,7 +11,7 @@ def recurse(subreddit, hot_list=[], count=0, after=None):
     settings = {"count": count, "after": after}
     header = {"User-Agent": "My-User-Agent"}
     res = requests.get("https://www.reddit.com/r/{}/hot.json".format(
-        subreddit), headers=header, allow_redirects=False, settings)
+        subreddit, settings), headers=header, allow_redirects=False, )
     if res.status_code >= 400:
         return None
 
