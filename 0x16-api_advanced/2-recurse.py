@@ -15,10 +15,8 @@ def recurse(subreddit, hot_list=[], count=0, after=None):
     if res.status_code >= 400:
         return None
 
-    lis = hot_list + [dicts.get("data").get("title")
-                        for dicts in res.json()
-                        .get("data")
-                        .get("children")]
+    lis = hot_list + [dicts.get("data").get(
+        "title") for dicts in res.json().get("data").get("children")]
 
     sett = res.json()
     if not sett.get("data").get("after"):
