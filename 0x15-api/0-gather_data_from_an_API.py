@@ -4,14 +4,13 @@
 """
 import requests
 from sys import agrv
-
 if __name__ == "__main__":
 
     user_1 = argv[1]
     user = requests.get("https://jsonplaceholder.typicode.com/users/{}"
                         .format(user1))
     response = requests.get("{}/{}".format(url, user_1), verify=False)
-    if response.status_code == 200:
+    if len(argv) == 2 and argv[1].isdigit():
         tasks = []
         total_tasks = 0
         completed = 0
@@ -30,3 +29,4 @@ if __name__ == "__main__":
 
     print('\n'.join(["\t " + task.get('title') for task in todos.json()
           if task.get('user_1') == int(user_1) and task.get('completed')]))
+
